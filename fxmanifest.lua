@@ -2,16 +2,10 @@ fx_version "adamant"
 
 game "gta5"
 
-client_scripts {
-    'config.lua'
-}
-
-shared_script 'config.lua'
-
 server_scripts {
+	'config.lua',
 	"server.lua",
-    'config.lua',
-    '@mysql-async/lib/MySQL.lua'
+    	'@mysql-async/lib/MySQL.lua'
 }
 
 
